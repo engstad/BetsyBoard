@@ -272,17 +272,17 @@ Text Label 6450 4700 2    60   ~ 0
 SDMMC_D0
 Text Label 6450 4800 2    60   ~ 0
 SDMMC_D1
-Text Label 1700 5250 2    60   ~ 0
+Text Label 4650 5250 0    60   ~ 0
 SDMMC_D0
-Text Label 1700 5350 2    60   ~ 0
+Text Label 4650 5350 0    60   ~ 0
 SDMMC_D1
-Text Label 1700 4650 2    60   ~ 0
+Text Label 4650 4650 0    60   ~ 0
 SDMMC_D2
-Text Label 1700 4750 2    60   ~ 0
+Text Label 4650 4750 0    60   ~ 0
 SDMMC_D3
-Text Label 1700 4850 2    60   ~ 0
+Text Label 4650 4850 0    60   ~ 0
 SDMMC_CMD
-Text Label 1700 5050 2    60   ~ 0
+Text Label 4650 5050 0    60   ~ 0
 SDMMC_CK
 Text Label 6450 5200 2    60   ~ 0
 SDMMC_CMD
@@ -292,11 +292,11 @@ Text Label 6450 5000 2    60   ~ 0
 SDMMC_D3
 Text Label 6450 4900 2    60   ~ 0
 SDMMC_D2
-Text Label 3500 5150 0    60   ~ 0
+Text Label 900  5150 2    60   ~ 0
 GND
-Text Label 1700 4950 2    60   ~ 0
+Text Label 4650 4950 0    60   ~ 0
 VDD
-Text Label 1700 5150 2    60   ~ 0
+Text Label 2700 5150 0    60   ~ 0
 GND
 Text Label 8550 3100 0    60   ~ 0
 A5
@@ -526,9 +526,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 2100 2250 2100
 Wire Wire Line
-	2250 2100 2250 2350
+	2250 2350 2250 2100
 Wire Wire Line
-	2250 2350 1400 2350
+	1400 2350 2250 2350
 Text Label 1400 2350 0    60   ~ 0
 OTG_5V
 Text Label 6900 850  0    60   ~ 0
@@ -580,14 +580,10 @@ Text Label 10100 4200 2    60   ~ 0
 GND
 Text Label 10100 4400 2    60   ~ 0
 GND
-Text Label 10100 4300 2    60   ~ 0
-GND
 Text Label 9850 1750 0    60   ~ 0
 VDD
 Text Label 9850 1650 0    60   ~ 0
 GND
-Text Label 10550 1750 0    60   ~ 0
-RTC_OUT
 $Comp
 L CONN_01X19 P2
 U 1 1 5608EF32
@@ -637,18 +633,18 @@ F 3 "" H 7850 1500 60  0000 C CNN
 	1    7850 1500
 	0    -1   -1   0   
 $EndComp
-Text Label 3500 5250 0    60   ~ 0
+Text Label 900  5250 2    60   ~ 0
 GND
 $Comp
 L SDMMC_Card CON1
 U 1 1 560A8328
-P 2600 5050
-F 0 "CON1" H 1950 5600 50  0000 C CNN
-F 1 "SDMMC_Card" H 3200 4600 50  0000 C CNN
-F 2 "engstad:SCHD3A0100" H 2800 5400 50  0000 C CNN
-F 3 "" H 2600 5050 60  0000 C CNN
-	1    2600 5050
-	1    0    0    -1  
+P 1800 5050
+F 0 "CON1" H 1150 5600 50  0000 C CNN
+F 1 "SDMMC_Card" H 2400 4600 50  0000 C CNN
+F 2 "engstad:SCHD3A0100" H 2000 5400 50  0000 C CNN
+F 3 "" H 1800 5050 60  0000 C CNN
+	1    1800 5050
+	-1   0    0    -1  
 $EndComp
 $Comp
 L TPS56x200 U3
@@ -847,7 +843,7 @@ F 3 "" H 6100 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 1550 6750 1250
+	6750 1250 6750 1550
 Wire Wire Line
 	5000 1250 5000 1500
 Wire Wire Line
@@ -924,4 +920,88 @@ F 3 "" H 10250 6100 60  0000 C CNN
 $EndComp
 Text Label 10250 5000 0    60   ~ 0
 D1
+Wire Wire Line
+	2700 4950 4400 4950
+$Comp
+L C C?
+U 1 1 56166412
+P 4000 5600
+F 0 "C?" H 4025 5700 50  0000 L CNN
+F 1 "22uF" H 4025 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4038 5450 30  0001 C CNN
+F 3 "" H 4000 5600 60  0000 C CNN
+	1    4000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 56166609
+P 4250 5600
+F 0 "C?" H 4275 5700 50  0000 L CNN
+F 1 "22uF" H 4275 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 4288 5450 30  0001 C CNN
+F 3 "" H 4250 5600 60  0000 C CNN
+	1    4250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5450 4000 4950
+Connection ~ 4000 4950
+Wire Wire Line
+	4000 5750 4000 5800
+Wire Wire Line
+	4250 5750 4250 5800
+Wire Wire Line
+	4250 5450 4250 4950
+Connection ~ 4250 4950
+$Comp
+L GND #PWR?
+U 1 1 5616688A
+P 4000 5800
+F 0 "#PWR?" H 4000 5550 50  0001 C CNN
+F 1 "GND" H 4000 5650 50  0000 C CNN
+F 2 "" H 4000 5800 60  0000 C CNN
+F 3 "" H 4000 5800 60  0000 C CNN
+	1    4000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 561668FC
+P 4250 5800
+F 0 "#PWR?" H 4250 5550 50  0001 C CNN
+F 1 "GND" H 4250 5650 50  0000 C CNN
+F 2 "" H 4250 5800 60  0000 C CNN
+F 3 "" H 4250 5800 60  0000 C CNN
+	1    4250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 561669CE
+P 4500 4950
+F 0 "L?" H 4530 4990 50  0000 L CNN
+F 1 "470nF" H 4530 4910 50  0000 L CNN
+F 2 "" H 4500 4950 60  0000 C CNN
+F 3 "" H 4500 4950 60  0000 C CNN
+	1    4500 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 4950 4650 4950
+Wire Wire Line
+	2700 4650 4650 4650
+Wire Wire Line
+	2700 4750 4650 4750
+Wire Wire Line
+	2700 4850 4650 4850
+Wire Wire Line
+	2700 5050 4650 5050
+Wire Wire Line
+	2700 5250 4650 5250
+Wire Wire Line
+	2700 5350 4650 5350
+Text Label 10550 1750 0    60   ~ 0
+~JTRST
+NoConn ~ 10100 4300
 $EndSCHEMATC
