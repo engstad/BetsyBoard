@@ -1,6 +1,6 @@
 (export (version D)
   (design
-    (source /home/engstad/Electronics/proj/DipsyBoard/BetsyBoard.sch)
+    (source /home/engstad/Electronics/proj/BetsyBoard/BetsyBoard.sch)
     (date "Mon 02 Nov 2015 11:38:59 PM PST")
     (tool "Eeschema 0.201510170916+6271~30~ubuntu15.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
@@ -620,7 +620,7 @@
     (library (logical engstad)
       (uri /home/engstad/Electronics/proj/lib/engstad/engstad/engstad.lib))
     (library (logical BetsyBoard-cache)
-      (uri /home/engstad/Electronics/proj/DipsyBoard/BetsyBoard-cache.lib))
+      (uri /home/engstad/Electronics/proj/BetsyBoard/BetsyBoard-cache.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
