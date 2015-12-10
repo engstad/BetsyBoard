@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:engstad
+LIBS:BetsyBoard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1442,8 +1443,34 @@ Wire Wire Line
 Connection ~ 4900 2800
 Text Label 4650 1200 0    60   ~ 0
 FB
-Text Label 4250 2800 2    60   ~ 0
+Text Label 4500 2800 2    60   ~ 0
 VBAT
 Text Label 8550 4000 0    60   ~ 0
 OTG_5V
+$Comp
+L CONN_01X02 P8
+U 1 1 56691320
+P 4050 2850
+F 0 "P8" H 4050 3000 50  0000 C CNN
+F 1 "POWER" V 4150 2850 50  0000 C CNN
+F 2 "w_conn_jst-ph:s2b-ph-sm4-tb" H 4050 2850 60  0001 C CNN
+F 3 "" H 4050 2850 60  0000 C CNN
+	1    4050 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5669151A
+P 4400 3150
+F 0 "#PWR030" H 4400 2900 50  0001 C CNN
+F 1 "GND" H 4400 3000 50  0000 C CNN
+F 2 "" H 4400 3150 60  0000 C CNN
+F 3 "" H 4400 3150 60  0000 C CNN
+	1    4400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2900 4400 2900
+Wire Wire Line
+	4400 2900 4400 3150
 $EndSCHEMATC
