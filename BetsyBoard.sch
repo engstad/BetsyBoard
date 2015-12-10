@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:BetsyBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:engstad
-LIBS:BetsyBoard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -46,11 +44,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L STM32L486Rx-LQFP64-RESCUE-BetsyBoard U1
+L STM32L486Rx-LQFP64 U1
 U 1 1 55F9D79E
 P 7500 4650
-F 0 "U1" H 7500 4650 60  0000 C CNN
-F 1 "STM32L486Rx-LQFP64" H 7500 5125 60  0000 C CNN
+F 0 "U1" H 7500 2900 60  0000 C CNN
+F 1 "STM32L486Rx-LQFP64" H 7500 6400 60  0000 C CNN
 F 2 "Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm" H 7500 4650 60  0001 C CNN
 F 3 "" H 7500 4650 60  0000 C CNN
 	1    7500 4650
@@ -324,8 +322,6 @@ Text Label 8550 4600 0    60   ~ 0
 JTDI
 Text Label 8550 5000 0    60   ~ 0
 JTDO/SWO
-Text Label 8550 5100 0    60   ~ 0
-~RST
 Text Label 8550 4900 0    60   ~ 0
 D1
 Text Label 8550 5700 0    60   ~ 0
@@ -515,7 +511,7 @@ Wire Wire Line
 	6150 4050 5750 4050
 Text Label 8550 3900 0    60   ~ 0
 D10
-Text Label 8550 4000 0    60   ~ 0
+Text Label 8550 5100 0    60   ~ 0
 D11
 Text Label 8550 5300 0    60   ~ 0
 D13
@@ -1448,4 +1444,6 @@ Text Label 4650 1200 0    60   ~ 0
 FB
 Text Label 4250 2800 2    60   ~ 0
 VBAT
+Text Label 8550 4000 0    60   ~ 0
+OTG_5V
 $EndSCHEMATC
