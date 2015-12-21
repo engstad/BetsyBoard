@@ -1,4 +1,4 @@
-update=Wed 09 Dec 2015 08:07:01 PM PST
+update=Sun 20 Dec 2015 12:34:59 PM PST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../lib/engstad/engstad
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/engstad/Electronics/proj/lib/engstad/engstad/engstad
+LibName30=/home/engstad/Electronics/proj/PowerRail/lib/engstad/engstad/engstad
