@@ -1,4 +1,4 @@
-update=Sun 20 Dec 2015 12:34:59 PM PST
+update=12/22/2015 1:34:41 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/engstad/Electronics/proj/PowerRail/lib/engstad/engstad/engstad
+LibName30=C:/elec/lib/engstad/engstad/engstad
