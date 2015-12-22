@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=C:/elec/lib/engstad/engstad/engstad
+LibName30=lib/engstad/engstad/engstad
