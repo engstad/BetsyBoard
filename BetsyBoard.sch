@@ -393,7 +393,19 @@ D15
 Text Label 6200 3300 2    60   ~ 0
 RTC
 Wire Wire Line
-	850  6600 3100 6600
+	850  6600 1000 6600
+Wire Wire Line
+	1000 6600 1250 6600
+Wire Wire Line
+	1250 6600 1600 6600
+Wire Wire Line
+	1600 6600 2200 6600
+Wire Wire Line
+	2200 6600 2500 6600
+Wire Wire Line
+	2500 6600 2800 6600
+Wire Wire Line
+	2800 6600 3100 6600
 Wire Wire Line
 	1250 6600 1250 6700
 Wire Wire Line
@@ -414,7 +426,19 @@ Connection ~ 2800 6600
 Wire Wire Line
 	1250 7100 1250 7000
 Wire Wire Line
-	850  7100 3100 7100
+	850  7100 1000 7100
+Wire Wire Line
+	1000 7100 1250 7100
+Wire Wire Line
+	1250 7100 1600 7100
+Wire Wire Line
+	1600 7100 2200 7100
+Wire Wire Line
+	2200 7100 2500 7100
+Wire Wire Line
+	2500 7100 2800 7100
+Wire Wire Line
+	2800 7100 3100 7100
 Wire Wire Line
 	1600 7100 1600 7000
 Connection ~ 1600 7100
@@ -434,13 +458,27 @@ Wire Wire Line
 	1000 7100 1000 7200
 Connection ~ 1000 7100
 Wire Wire Line
-	1500 1150 2150 1150
+	1500 1150 1900 1150
 Wire Wire Line
-	1500 1250 2150 1250
+	1900 1150 2150 1150
 Wire Wire Line
-	1500 1350 2150 1350
+	1500 1250 1800 1250
 Wire Wire Line
-	1500 1050 3850 1050
+	1800 1250 2150 1250
+Wire Wire Line
+	1500 1350 1700 1350
+Wire Wire Line
+	1700 1350 2150 1350
+Wire Wire Line
+	1500 1050 2000 1050
+Wire Wire Line
+	2000 1050 2750 1050
+Wire Wire Line
+	2750 1050 3150 1050
+Wire Wire Line
+	3150 1050 3400 1050
+Wire Wire Line
+	3400 1050 3850 1050
 Text Label 2150 1050 0    60   ~ 0
 OTG_5V
 Text Label 7000 1050 2    60   ~ 0
@@ -587,7 +625,11 @@ $EndComp
 Text Label 10150 4950 0    60   ~ 0
 D1
 Wire Wire Line
-	2700 5100 3550 5100
+	2700 5100 3100 5100
+Wire Wire Line
+	3100 5100 3400 5100
+Wire Wire Line
+	3400 5100 3550 5100
 $Comp
 L C C12
 U 1 1 56166412
@@ -727,7 +769,13 @@ F 4 "BLM21PG221SN1D" H 4500 2100 60  0001 C CNN "Manuf #"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4600 2100 5400 2100
+	4600 2100 4750 2100
+Wire Wire Line
+	4750 2100 5100 2100
+Wire Wire Line
+	5100 2100 5250 2100
+Wire Wire Line
+	5250 2100 5400 2100
 Wire Wire Line
 	4750 2100 4750 2150
 Wire Wire Line
@@ -791,23 +839,25 @@ VDD
 Text Label 10300 2250 0    60   ~ 0
 JTMS/SWDIO
 Wire Wire Line
-	1950 1150 1950 2100
-Connection ~ 1950 1150
+	1900 1150 1900 2100
+Connection ~ 1900 1150
 Wire Wire Line
-	1850 1250 1850 2000
+	1800 1250 1800 2000
 Wire Wire Line
-	1850 2000 2000 2000
-Connection ~ 1850 1250
+	1800 2000 2000 2000
+Connection ~ 1800 1250
 Wire Wire Line
-	1750 1350 1750 1900
-Connection ~ 1750 1350
+	1700 1350 1700 1900
+Connection ~ 1700 1350
 Wire Wire Line
-	1500 1450 2150 1450
+	1500 1450 1600 1450
 Wire Wire Line
-	2450 1750 2050 1750
-Connection ~ 2050 1050
+	1600 1450 2150 1450
 Wire Wire Line
-	2050 1750 2050 1050
+	2450 1750 2000 1750
+Connection ~ 2000 1050
+Wire Wire Line
+	2000 1750 2000 1050
 Wire Wire Line
 	2150 1450 2150 1550
 Wire Wire Line
@@ -907,9 +957,13 @@ $EndComp
 Wire Wire Line
 	2250 3500 2250 3400
 Wire Wire Line
-	2100 3400 2400 3400
+	2100 3400 2250 3400
 Wire Wire Line
-	2700 3400 3000 3400
+	2250 3400 2400 3400
+Wire Wire Line
+	2700 3400 2800 3400
+Wire Wire Line
+	2800 3400 3000 3400
 Wire Wire Line
 	2800 3400 2800 3500
 Connection ~ 2250 3400
@@ -969,7 +1023,9 @@ F 3 "" H 10350 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 3000 10350 3100
+	10350 3000 10350 3050
+Wire Wire Line
+	10350 3050 10350 3100
 NoConn ~ 10800 3600
 $Comp
 L INDUCTOR_SMALL L1
@@ -983,7 +1039,9 @@ F 3 "" H 5600 1050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 1050 5350 1050
+	5000 1050 5300 1050
+Wire Wire Line
+	5300 1050 5350 1050
 $Comp
 L C C16
 U 1 1 563870A0
@@ -1020,7 +1078,9 @@ $EndComp
 Wire Wire Line
 	5900 1050 5900 1100
 Wire Wire Line
-	5900 1300 5900 1400
+	5900 1300 5900 1350
+Wire Wire Line
+	5900 1350 5900 1400
 $Comp
 L R_Small R2
 U 1 1 56389A6F
@@ -1077,11 +1137,17 @@ $EndComp
 Wire Wire Line
 	9800 1150 9700 1150
 Wire Wire Line
-	9700 1150 9700 1450
+	9700 1150 9700 1250
+Wire Wire Line
+	9700 1250 9700 1450
 Wire Wire Line
 	9700 1250 9800 1250
 Wire Wire Line
-	9350 1450 9800 1450
+	9350 1450 9550 1450
+Wire Wire Line
+	9550 1450 9700 1450
+Wire Wire Line
+	9700 1450 9800 1450
 Connection ~ 9700 1250
 Wire Wire Line
 	9350 1400 9350 1450
@@ -1157,9 +1223,19 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 4450 1600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 1050 7000 1050
+	5850 1050 5900 1050
 Wire Wire Line
-	6500 950  6500 1200
+	5900 1050 6250 1050
+Wire Wire Line
+	6250 1050 6500 1050
+Wire Wire Line
+	6500 1050 6700 1050
+Wire Wire Line
+	6700 1050 7000 1050
+Wire Wire Line
+	6500 950  6500 1050
+Wire Wire Line
+	6500 1050 6500 1200
 Connection ~ 6700 1050
 Wire Wire Line
 	6250 1200 6250 1050
@@ -1196,7 +1272,11 @@ Wire Wire Line
 	3400 1200 3400 1050
 Connection ~ 3400 1050
 Wire Wire Line
-	1600 1450 1600 2350
+	1600 1450 1600 1900
+Wire Wire Line
+	1600 1900 1600 2100
+Wire Wire Line
+	1600 2100 1600 2350
 Connection ~ 1600 1450
 $Comp
 L VDD #PWR023
@@ -1213,12 +1293,16 @@ Wire Wire Line
 	1000 6500 1000 6600
 Connection ~ 1000 6600
 Wire Wire Line
-	3800 1350 3800 1600
+	3800 1350 3800 1550
+Wire Wire Line
+	3800 1550 3800 1600
 Wire Wire Line
 	5300 1050 5300 1200
 Connection ~ 5300 1050
 Wire Wire Line
-	2150 1550 3800 1550
+	2150 1550 3150 1550
+Wire Wire Line
+	3150 1550 3800 1550
 Wire Wire Line
 	3150 1450 3150 1550
 Connection ~ 3150 1550
@@ -1237,7 +1321,9 @@ Connection ~ 3800 1550
 Wire Wire Line
 	2700 5300 3900 5300
 Wire Wire Line
-	4000 3800 5100 3800
+	4000 3800 4100 3800
+Wire Wire Line
+	4100 3800 5100 3800
 Wire Wire Line
 	4100 3800 4100 3850
 $Comp
@@ -1263,7 +1349,9 @@ F 3 "" H 9550 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 1050 9800 1050
+	9350 1050 9550 1050
+Wire Wire Line
+	9550 1050 9800 1050
 Wire Wire Line
 	9550 1000 9550 1050
 Connection ~ 9550 1050
@@ -1281,7 +1369,9 @@ OSC_OUT
 Wire Wire Line
 	900  5300 800  5300
 Wire Wire Line
-	800  5300 800  5900
+	800  5300 800  5400
+Wire Wire Line
+	800  5400 800  5900
 Wire Wire Line
 	800  5400 900  5400
 Connection ~ 800  5400
@@ -1323,9 +1413,9 @@ $EndComp
 Wire Wire Line
 	10700 3050 10800 3050
 Wire Wire Line
-	1750 1900 2000 1900
+	1700 1900 2000 1900
 Wire Wire Line
-	1950 2100 2000 2100
+	1900 2100 2000 2100
 Text Label 5050 1050 0    60   ~ 0
 SW
 Wire Wire Line
@@ -1335,7 +1425,9 @@ Wire Wire Line
 Wire Wire Line
 	6500 1500 6500 1550
 Wire Wire Line
-	9800 3500 9900 3500
+	9800 3500 9850 3500
+Wire Wire Line
+	9850 3500 9900 3500
 Wire Wire Line
 	5100 1200 5000 1200
 $Comp
@@ -1521,7 +1613,11 @@ Wire Wire Line
 	1600 2350 2450 2350
 Connection ~ 1600 2100
 Wire Wire Line
-	1100 1650 1100 2350
+	1100 1650 1100 1900
+Wire Wire Line
+	1100 1900 1100 2100
+Wire Wire Line
+	1100 2100 1100 2350
 $Comp
 L CONN_01X01 P9
 U 1 1 56DBFE79
