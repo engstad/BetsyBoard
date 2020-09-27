@@ -25,7 +25,7 @@ F 3 "https://www.cypress.com/file/177961/download" H 7650 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR01
+L power:GND #PWR01
 U 1 1 55F9D943
 P 2550 2900
 F 0 "#PWR01" H 2550 2650 50  0001 C CNN
@@ -42,7 +42,7 @@ OTG_FS_D+
 Text Label 9100 4400 0    60   ~ 0
 JTMS/SWDIO
 $Comp
-L BetsyBoard-rescue:C C12
+L Device:C C12
 U 1 1 55FB1A3F
 P 1500 7100
 F 0 "C12" H 1525 7200 50  0000 L CNN
@@ -53,7 +53,7 @@ F 3 "" H 1500 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C6
+L Device:C C6
 U 1 1 55FB1A93
 P 5200 2300
 F 0 "C6" H 5225 2400 50  0000 L CNN
@@ -64,7 +64,7 @@ F 3 "" H 5200 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C14
+L Device:C C14
 U 1 1 55FB1B14
 P 2450 7100
 F 0 "C14" H 2475 7200 50  0000 L CNN
@@ -75,7 +75,7 @@ F 3 "" H 2450 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C15
+L Device:C C15
 U 1 1 55FB1B48
 P 2750 7100
 F 0 "C15" H 2775 7200 50  0000 L CNN
@@ -86,7 +86,7 @@ F 3 "" H 2750 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C16
+L Device:C C16
 U 1 1 55FB1BA8
 P 3050 7100
 F 0 "C16" H 3075 7200 50  0000 L CNN
@@ -97,7 +97,7 @@ F 3 "" H 3050 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C17
+L Device:C C17
 U 1 1 55FB1BDE
 P 3350 7100
 F 0 "C17" H 3375 7200 50  0000 L CNN
@@ -108,7 +108,7 @@ F 3 "" H 3350 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C13
+L Device:C C13
 U 1 1 55FB1E44
 P 1850 7100
 F 0 "C13" H 1875 7200 50  0000 L CNN
@@ -119,7 +119,7 @@ F 3 "" H 1850 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR02
+L power:GND #PWR02
 U 1 1 55FB22AB
 P 1250 7450
 F 0 "#PWR02" H 1250 7200 50  0001 C CNN
@@ -130,7 +130,7 @@ F 3 "" H 1250 7450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C5
+L Device:C C5
 U 1 1 55FB260E
 P 4750 2300
 F 0 "C5" H 4775 2400 50  0000 L CNN
@@ -143,7 +143,7 @@ $EndComp
 Text Label 6200 3800 2    60   ~ 0
 ~RST
 $Comp
-L BetsyBoard-rescue:GND #PWR03
+L power:GND #PWR03
 U 1 1 55FB2816
 P 10350 3900
 F 0 "#PWR03" H 10350 3650 50  0001 C CNN
@@ -154,7 +154,7 @@ F 3 "" H 10350 3900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C7
+L Device:C C7
 U 1 1 55FB28C4
 P 10550 3050
 F 0 "C7" V 10500 3100 50  0000 L CNN
@@ -319,7 +319,7 @@ JTDI
 Text Label 10300 1250 0    60   ~ 0
 JTDO/SWO
 $Comp
-L BetsyBoard-rescue:C C10
+L Device:C C10
 U 1 1 5603811A
 P 5500 4150
 F 0 "C10" H 5300 4250 50  0000 L CNN
@@ -330,14 +330,14 @@ F 3 "" H 5500 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_02X05 P3
+L Connector_Generic:Conn_02x05_Odd_Even P3
 U 1 1 56040117
-P 10050 1250
-F 0 "P3" H 10050 1550 50  0000 C CNN
-F 1 "CORTEX-JTAG" H 10050 950 50  0000 C CNN
-F 2 "engstad:conn-jtag-0.05" H 10050 50  60  0001 C CNN
-F 3 "" H 10050 50  60  0000 C CNN
-	1    10050 1250
+P 10000 1250
+F 0 "P3" H 10000 1550 50  0000 C CNN
+F 1 "CORTEX-JTAG" H 10000 950 50  0000 C CNN
+F 2 "engstad:conn-jtag-0.05" H 10000 50  60  0001 C CNN
+F 3 "" H 10000 50  60  0000 C CNN
+	1    10000 1250
 	1    0    0    -1  
 $EndComp
 Text Label 9100 4000 0    60   ~ 0
@@ -351,7 +351,7 @@ D16
 Text Label 8550 2500 2    60   ~ 0
 D16
 $Comp
-L BetsyBoard-rescue:C C1
+L Device:C C1
 U 1 1 560BBDCE
 P 3450 1250
 F 0 "C1" H 3565 1300 50  0000 L CNN
@@ -377,7 +377,7 @@ JTMS/SWDIO
 Text Label 10300 1150 0    60   ~ 0
 JTCK/SWCLK
 $Comp
-L BetsyBoard-rescue:LED-RESCUE-BetsyBoard D1
+L Device:LED D1
 U 1 1 560C0EFD
 P 10150 5350
 F 0 "D1" V 10196 5242 50  0000 R CNN
@@ -388,7 +388,7 @@ F 3 "" H 10150 5350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L BetsyBoard-rescue:R R3
+L Device:R R3
 U 1 1 560C1104
 P 10150 5800
 F 0 "R3" H 10080 5876 50  0000 R CNN
@@ -399,7 +399,7 @@ F 3 "" H 10150 5800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR04
+L power:GND #PWR04
 U 1 1 560C11D2
 P 10150 6050
 F 0 "#PWR04" H 10150 5800 50  0001 C CNN
@@ -412,7 +412,7 @@ $EndComp
 Text Label 10150 4950 0    60   ~ 0
 D1
 $Comp
-L BetsyBoard-rescue:GND #PWR05
+L power:GND #PWR05
 U 1 1 5616688A
 P 1250 6050
 F 0 "#PWR05" H 1250 5800 50  0001 C CNN
@@ -426,7 +426,7 @@ NoConn ~ 9800 1350
 Text Label 6200 3100 2    60   ~ 0
 BOOT0
 $Comp
-L BetsyBoard-rescue:R R2
+L Device:R R2
 U 1 1 5629BEEA
 P 5750 3100
 F 0 "R2" V 5830 3100 50  0000 C CNN
@@ -437,7 +437,7 @@ F 3 "" H 5750 3100 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR06
+L power:GND #PWR06
 U 1 1 5629BF5F
 P 4450 3250
 F 0 "#PWR06" H 4450 3000 50  0001 C CNN
@@ -448,7 +448,7 @@ F 3 "" H 4450 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR07
+L power:VDD #PWR07
 U 1 1 5629CAD9
 P 4450 2950
 F 0 "#PWR07" H 4450 2800 50  0001 C CNN
@@ -459,7 +459,7 @@ F 3 "" H 4450 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR08
+L power:VDD #PWR08
 U 1 1 5629CD8E
 P 5500 850
 F 0 "#PWR08" H 5500 700 50  0001 C CNN
@@ -470,7 +470,7 @@ F 3 "" H 5500 850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR09
+L power:GND #PWR09
 U 1 1 5629DDC0
 P 4750 2450
 F 0 "#PWR09" H 4750 2200 50  0001 C CNN
@@ -481,7 +481,7 @@ F 3 "" H 4750 2450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR011
+L power:VDD #PWR011
 U 1 1 5629E0D9
 P 3850 2050
 F 0 "#PWR011" H 3850 1900 50  0001 C CNN
@@ -492,7 +492,7 @@ F 3 "" H 3850 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:LED-RESCUE-BetsyBoard D2
+L Device:LED D2
 U 1 1 562B4DD6
 P 10550 5350
 F 0 "D2" V 10596 5242 50  0000 R CNN
@@ -503,7 +503,7 @@ F 3 "" H 10550 5350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L BetsyBoard-rescue:R R4
+L Device:R R4
 U 1 1 562B4DDD
 P 10550 5800
 F 0 "R4" H 10620 5876 50  0000 L CNN
@@ -514,7 +514,7 @@ F 3 "" H 10550 5800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR012
+L power:GND #PWR012
 U 1 1 562B4DE4
 P 10550 6050
 F 0 "#PWR012" H 10550 5800 50  0001 C CNN
@@ -525,7 +525,7 @@ F 3 "" H 10550 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:Crystal Y1
+L Device:Crystal Y1
 U 1 1 562BB610
 P 2550 3400
 F 0 "Y1" H 2550 3550 50  0000 C CNN
@@ -536,7 +536,7 @@ F 3 "" H 2550 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C_Small C8
+L Device:C_Small C8
 U 1 1 562BB6B5
 P 2250 3600
 F 0 "C8" H 2260 3670 50  0000 L CNN
@@ -547,7 +547,7 @@ F 3 "" H 2250 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C_Small C9
+L Device:C_Small C9
 U 1 1 562BB746
 P 2800 3600
 F 0 "C9" H 2810 3670 50  0000 L CNN
@@ -558,7 +558,7 @@ F 3 "" H 2800 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR013
+L power:GND #PWR013
 U 1 1 562BB83F
 P 2250 3700
 F 0 "#PWR013" H 2250 3450 50  0001 C CNN
@@ -569,7 +569,7 @@ F 3 "" H 2250 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR014
+L power:GND #PWR014
 U 1 1 562BB8CB
 P 2800 3700
 F 0 "#PWR014" H 2800 3450 50  0001 C CNN
@@ -588,29 +588,29 @@ RTC_OSC_IN
 Text Label 3000 3400 0    60   ~ 0
 RTC_OSC_OUT
 $Comp
-L BetsyBoard-rescue:CONN_01X16 P4
+L Connector_Generic:Conn_01x16 P4
 U 1 1 56324CF9
-P 7550 1750
-F 0 "P4" H 7550 2600 50  0000 C CNN
-F 1 "Analog" H 7550 900 50  0000 C CNN
-F 2 "engstad:pin-strip-16" H 7550 1750 60  0001 C CNN
-F 3 "" H 7550 1750 60  0000 C CNN
-	1    7550 1750
+P 7550 1700
+F 0 "P4" H 7550 2550 50  0000 C CNN
+F 1 "Analog" H 7550 800 50  0000 C CNN
+F 2 "engstad:pin-strip-16" H 7550 1700 60  0001 C CNN
+F 3 "" H 7550 1700 60  0000 C CNN
+	1    7550 1700
 	-1   0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_01X16 P5
+L Connector_Generic:Conn_01x16 P5
 U 1 1 5632536D
-P 8750 1750
-F 0 "P5" H 8750 2600 50  0000 C CNN
-F 1 "Digital" H 8750 900 50  0000 C CNN
-F 2 "engstad:pin-strip-16" H 8750 1750 60  0001 C CNN
-F 3 "" H 8750 1750 60  0000 C CNN
-	1    8750 1750
+P 8750 1700
+F 0 "P5" H 8750 2550 50  0000 C CNN
+F 1 "Digital" H 8750 800 50  0000 C CNN
+F 2 "engstad:pin-strip-16" H 8750 1700 60  0001 C CNN
+F 3 "" H 8750 1700 60  0000 C CNN
+	1    8750 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:APX823 U3
+L @Engstad:APX823 U3
 U 1 1 56371853
 P 10350 3500
 F 0 "U3" H 10150 3750 60  0000 C CNN
@@ -621,7 +621,7 @@ F 3 "http://www.diodes.com/_files/datasheets/APX823_824_825A.pdf" V 11150 3500 6
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR015
+L power:VDD #PWR015
 U 1 1 56371E41
 P 10350 3000
 F 0 "#PWR015" H 10350 2850 50  0001 C CNN
@@ -633,7 +633,7 @@ F 3 "" H 10350 3000 60  0000 C CNN
 $EndComp
 NoConn ~ 10800 3600
 $Comp
-L BetsyBoard-rescue:C C2
+L Device:C C2
 U 1 1 563870A0
 P 5200 1200
 F 0 "C2" H 5225 1300 50  0000 L CNN
@@ -644,7 +644,7 @@ F 3 "" H 5200 1200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C3
+L Device:C C3
 U 1 1 564EFD30
 P 9350 1250
 F 0 "C3" H 9375 1350 50  0000 L CNN
@@ -655,7 +655,7 @@ F 3 "" H 9350 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR016
+L power:GND #PWR016
 U 1 1 564F03B1
 P 9550 1500
 F 0 "#PWR016" H 9550 1250 50  0001 C CNN
@@ -666,7 +666,7 @@ F 3 "" H 9550 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR017
+L power:GND #PWR017
 U 1 1 564F36A0
 P 5500 4300
 F 0 "#PWR017" H 5500 4050 50  0001 C CNN
@@ -677,18 +677,18 @@ F 3 "" H 5500 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_01X02 P6
+L Connector_Generic:Conn_01x02 P6
 U 1 1 56691320
-P 4050 4050
-F 0 "P6" H 4050 4200 50  0000 C CNN
-F 1 "BATT" V 4150 4050 50  0000 C CNN
-F 2 "engstad:pin-socket-2" H 4050 4050 60  0001 C CNN
-F 3 "" H 4050 4050 60  0000 C CNN
-	1    4050 4050
+P 4050 4000
+F 0 "P6" H 4050 4100 50  0000 C CNN
+F 1 "BATT" V 4150 3950 50  0000 C CNN
+F 2 "engstad:pin-socket-2" H 4050 4000 60  0001 C CNN
+F 3 "" H 4050 4000 60  0000 C CNN
+	1    4050 4000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR018
+L power:GND #PWR018
 U 1 1 5669151A
 P 4500 4150
 F 0 "#PWR018" H 4500 3900 50  0001 C CNN
@@ -699,7 +699,7 @@ F 3 "" H 4500 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR019
+L power:VDD #PWR019
 U 1 1 56721E3D
 P 1250 6750
 F 0 "#PWR019" H 1250 6600 50  0001 C CNN
@@ -710,7 +710,7 @@ F 3 "" H 1250 6750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR020
+L power:GND #PWR020
 U 1 1 56742328
 P 1200 1550
 F 0 "#PWR020" H 1200 1300 50  0001 C CNN
@@ -721,7 +721,7 @@ F 3 "" H 1200 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR021
+L power:VDD #PWR021
 U 1 1 56745056
 P 4000 3800
 F 0 "#PWR021" H 4000 3650 50  0001 C CNN
@@ -732,7 +732,7 @@ F 3 "" H 4000 3800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR022
+L power:VDD #PWR022
 U 1 1 56745B0A
 P 9550 1000
 F 0 "#PWR022" H 9550 850 50  0001 C CNN
@@ -751,7 +751,7 @@ OSC_IN
 Text Label 2750 2800 0    60   ~ 0
 OSC_OUT
 $Comp
-L BetsyBoard-rescue:GND #PWR023
+L power:GND #PWR023
 U 1 1 5674E69D
 P 10800 3050
 F 0 "#PWR023" H 10800 2800 50  0001 C CNN
@@ -762,7 +762,7 @@ F 3 "" H 10800 3050 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR024
+L power:GND #PWR024
 U 1 1 5674E8E6
 P 9500 3600
 F 0 "#PWR024" H 9500 3350 50  0001 C CNN
@@ -773,18 +773,18 @@ F 3 "" H 9500 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_01X01 P1
+L Connector:Conn_01x01_Male P1
 U 1 1 567785D7
 P 5950 950
 F 0 "P1" H 5950 850 50  0000 C CNN
-F 1 "VDD" H 6100 950 50  0000 C CNN
+F 1 "VDD" H 5850 950 50  0000 C CNN
 F 2 "engstad:pin-strip-1" H 5869 810 50  0001 C CNN
 F 3 "" H 5950 950 50  0000 C CNN
 	1    5950 950 
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_01X01 P7
+L Connector_Generic:Conn_01x01 P7
 U 1 1 56779E0F
 P 2550 4150
 F 0 "P7" H 2550 4050 50  0000 C CNN
@@ -830,7 +830,7 @@ BOOT_SEL
 Text Label 10300 1450 0    60   ~ 0
 ~JTRST
 $Comp
-L BetsyBoard-rescue:SW_PUSH_NO SW2
+L @Engstad:SW_PUSH_NO SW2
 U 1 1 567471F1
 P 9650 3500
 F 0 "SW2" H 9650 3650 60  0000 C CNN
@@ -841,18 +841,18 @@ F 3 "" H 9650 3500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:CONN_01X01 P2
+L Connector:Conn_01x01_Male P2
 U 1 1 56DBFE79
 P 2250 650
-F 0 "P2" H 2250 550 50  0000 C CNN
-F 1 "VBUS" H 2400 650 50  0000 C CNN
+F 0 "P2" H 2250 700 50  0000 C CNN
+F 1 "VBUS" H 2250 600 50  0000 C CNN
 F 2 "engstad:pin-strip-1" H 2169 510 50  0001 C CNN
 F 3 "" H 2250 650 50  0000 C CNN
 	1    2250 650 
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR026
+L power:GND #PWR026
 U 1 1 57D7BCFB
 P 1500 6050
 F 0 "#PWR026" H 1500 5800 50  0001 C CNN
@@ -863,7 +863,7 @@ F 3 "" H 1500 6050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:C C11
+L Device:C C11
 U 1 1 57D7DBA4
 P 1250 5900
 F 0 "C11" H 1050 6000 50  0000 L CNN
@@ -876,18 +876,7 @@ $EndComp
 Text Label 3450 950  0    60   ~ 0
 VIN
 $Comp
-L BetsyBoard-rescue:PWR_FLAG #FLG027
-U 1 1 58FD921E
-P 3650 800
-F 0 "#FLG027" H 3650 895 50  0001 C CNN
-F 1 "PWR_FLAG" H 3650 1000 50  0000 C CNN
-F 2 "" H 3650 800 50  0000 C CNN
-F 3 "" H 3650 800 50  0000 C CNN
-	1    3650 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L BetsyBoard-rescue:PWR_FLAG #FLG028
+L power:PWR_FLAG #FLG028
 U 1 1 58FDA87D
 P 5300 3550
 F 0 "#FLG028" H 5300 3645 50  0001 C CNN
@@ -898,7 +887,7 @@ F 3 "" H 5300 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR031
+L power:GND #PWR031
 U 1 1 58FDC5DA
 P 2350 2150
 F 0 "#PWR031" H 2350 1900 50  0001 C CNN
@@ -909,7 +898,7 @@ F 3 "" H 2350 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR032
+L power:GND #PWR032
 U 1 1 58FDC793
 P 3450 1400
 F 0 "#PWR032" H 3450 1150 50  0001 C CNN
@@ -920,7 +909,7 @@ F 3 "" H 3450 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR033
+L power:GND #PWR033
 U 1 1 58FDC7F4
 P 4500 1350
 F 0 "#PWR033" H 4500 1100 50  0001 C CNN
@@ -931,7 +920,7 @@ F 3 "" H 4500 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR034
+L power:GND #PWR034
 U 1 1 58FDC855
 P 5200 1350
 F 0 "#PWR034" H 5200 1100 50  0001 C CNN
@@ -981,9 +970,9 @@ Wire Wire Line
 	3450 950  3450 1100
 Connection ~ 3450 950 
 Wire Wire Line
-	10150 4950 10150 5150
+	10150 4950 10150 5200
 Wire Wire Line
-	10150 5550 10150 5650
+	10150 5500 10150 5650
 Wire Wire Line
 	10150 5950 10150 6050
 Wire Wire Line
@@ -999,9 +988,9 @@ Wire Wire Line
 Wire Wire Line
 	3850 2100 3850 2050
 Wire Wire Line
-	10550 4950 10550 5150
+	10550 4950 10550 5200
 Wire Wire Line
-	10550 5550 10550 5650
+	10550 5500 10550 5650
 Wire Wire Line
 	10550 5950 10550 6050
 Wire Wire Line
@@ -1058,8 +1047,6 @@ Wire Wire Line
 Wire Wire Line
 	10700 3050 10800 3050
 Wire Wire Line
-	2450 650  2750 650 
-Wire Wire Line
 	2750 650  2750 950 
 Connection ~ 2750 950 
 Wire Wire Line
@@ -1088,7 +1075,7 @@ Wire Wire Line
 	5300 3550 5500 3550
 Connection ~ 5500 3550
 $Comp
-L BetsyBoard-rescue:VDDA #PWR039
+L power:VDDA #PWR039
 U 1 1 58FDF596
 P 5850 2050
 F 0 "#PWR039" H 5850 1900 50  0001 C CNN
@@ -1101,7 +1088,7 @@ $EndComp
 Wire Wire Line
 	5850 2100 5850 2050
 $Comp
-L BetsyBoard-rescue:VDDA #PWR040
+L power:VDDA #PWR040
 U 1 1 58FDFE0F
 P 6050 5300
 F 0 "#PWR040" H 6050 5150 50  0001 C CNN
@@ -1112,7 +1099,7 @@ F 3 "" H 6050 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR041
+L power:VDD #PWR041
 U 1 1 58FE0100
 P 6050 5400
 F 0 "#PWR041" H 6050 5250 50  0001 C CNN
@@ -1138,7 +1125,7 @@ Wire Wire Line
 	6100 5700 6200 5700
 Connection ~ 6100 5600
 $Comp
-L BetsyBoard-rescue:GND #PWR042
+L power:GND #PWR042
 U 1 1 58FE0727
 P 6000 6200
 F 0 "#PWR042" H 6000 5950 50  0001 C CNN
@@ -1271,7 +1258,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 5950 3000 5950
 $Comp
-L BetsyBoard-rescue:GND #PWR0101
+L power:GND #PWR0101
 U 1 1 5F810F52
 P 4800 6400
 F 0 "#PWR0101" H 4800 6150 50  0001 C CNN
@@ -1337,7 +1324,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 950  2350 950 
 $Comp
-L BetsyBoard-rescue:VDDA #PWR044
+L power:VDDA #PWR044
 U 1 1 58FE10B7
 P 850 3200
 F 0 "#PWR044" H 850 3050 50  0001 C CNN
@@ -1348,7 +1335,7 @@ F 3 "" H 850 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:PWR_FLAG #FLG043
+L power:PWR_FLAG #FLG043
 U 1 1 58FE100D
 P 850 3200
 F 0 "#FLG043" H 850 3295 50  0001 C CNN
@@ -1359,7 +1346,7 @@ F 3 "" H 850 3200 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L BetsyBoard-rescue:VDD #PWR0102
+L power:VDD #PWR0102
 U 1 1 5F70C256
 P 1250 5650
 F 0 "#PWR0102" H 1250 5500 50  0001 C CNN
@@ -1371,7 +1358,6 @@ F 3 "" H 1250 5650 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	1250 5750 1250 5650
-Connection ~ 1250 5750
 Text Label 2750 1850 0    60   ~ 0
 OTG_FS_D-
 Text Label 9100 3900 0    60   ~ 0
@@ -1433,7 +1419,7 @@ F 3 "~" H 5750 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR0104
+L power:GND #PWR0104
 U 1 1 5F7D17B7
 P 5650 2450
 F 0 "#PWR0104" H 5650 2200 50  0001 C CNN
@@ -1455,7 +1441,7 @@ F 3 "" H 5850 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L BetsyBoard-rescue:GND #PWR?
+L power:GND #PWR?
 U 1 1 5F817E0A
 P 5200 2450
 F 0 "#PWR?" H 5200 2200 50  0001 C CNN
@@ -1463,6 +1449,19 @@ F 1 "GND" H 5200 2300 50  0000 C CNN
 F 2 "" H 5200 2450 60  0000 C CNN
 F 3 "" H 5200 2450 60  0000 C CNN
 	1    5200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 650  2750 650 
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5F72B5EE
+P 3650 800
+F 0 "#FLG?" H 3650 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3650 973 50  0000 C CNN
+F 2 "" H 3650 800 50  0001 C CNN
+F 3 "~" H 3650 800 50  0001 C CNN
+	1    3650 800 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
