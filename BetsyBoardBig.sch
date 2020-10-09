@@ -40,7 +40,7 @@ OTG_FS_D-
 Text Label 10550 4400 0    50   ~ 0
 OTG_FS_D+
 Text Label 10550 4500 0    50   ~ 0
-SWDIO
+SWDIO_JTMS
 $Comp
 L Device:C C12
 U 1 1 55FB1A3F
@@ -180,11 +180,11 @@ SDMMC_D3
 Text Label 7650 5000 2    50   ~ 0
 SDMMC_D2
 Text Label 10550 4600 0    50   ~ 0
-SWCLK
+SWCLK_JTCK
 Text Label 7650 3400 2    50   ~ 0
 RTC_TS
-Text Label 10650 1000 0    60   ~ 0
-SWO
+Text Label 10650 1000 0    50   ~ 0
+SWO_JTDO
 $Comp
 L Device:C C10
 U 1 1 5603811A
@@ -229,10 +229,10 @@ F 3 "" H 1650 3050 60  0000 C CNN
 	1    1650 3050
 	1    0    0    -1  
 $EndComp
-Text Label 10650 800  0    60   ~ 0
-SWDIO
-Text Label 10650 900  0    60   ~ 0
-SWCLK
+Text Label 10650 800  0    50   ~ 0
+SWDIO_JTMS
+Text Label 10650 900  0    50   ~ 0
+SWCLK_JTCK
 $Comp
 L Device:LED D1
 U 1 1 560C0EFD
@@ -586,35 +586,13 @@ $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5674E8E6
-P 5050 5000
-F 0 "#PWR024" H 5050 4750 50  0001 C CNN
-F 1 "GND" H 5050 4850 50  0000 C CNN
-F 2 "" H 5050 5000 60  0000 C CNN
-F 3 "" H 5050 5000 60  0000 C CNN
-	1    5050 5000
+P 4950 5000
+F 0 "#PWR024" H 4950 4750 50  0001 C CNN
+F 1 "GND" H 4950 4850 50  0000 C CNN
+F 2 "" H 4950 5000 60  0000 C CNN
+F 3 "" H 4950 5000 60  0000 C CNN
+	1    4950 5000
 	1    0    0    -1  
-$EndComp
-$Comp
-L @Engstad:spdp-2x SW1
-U 1 1 567A978A
-P 4200 3950
-F 0 "SW1" H 4200 4200 60  0000 C CNN
-F 1 "DIPSW" H 4200 3700 60  0000 C CNN
-F 2 "engstad:slide-switch-smd-cas-220-d20" H 4200 3950 60  0001 C CNN
-F 3 "" H 4200 3950 60  0000 C CNN
-	1    4200 3950
-	-1   0    0    1   
-$EndComp
-$Comp
-L @Engstad:spdp-2x SW1
-U 2 1 567A9897
-P 3850 3150
-F 0 "SW1" H 3850 2900 60  0000 C CNN
-F 1 "DIPSW" H 3850 3400 60  0000 C CNN
-F 2 "engstad:slide-switch-smd-cas-220-d20" H 3850 3150 60  0001 C CNN
-F 3 "" H 3850 3150 60  0000 C CNN
-	2    3850 3150
-	-1   0    0    -1  
 $EndComp
 Text Label 7650 3300 2    50   ~ 0
 VBAT
@@ -625,12 +603,12 @@ BOOT_SEL
 $Comp
 L @Engstad:SW_PUSH_NO SW2
 U 1 1 567471F1
-P 5200 4900
-F 0 "SW2" H 5200 5050 60  0000 C CNN
-F 1 "RST" H 5200 4800 60  0000 C CNN
-F 2 "engstad:tactile-switch-evpay-34x29mm" H 5200 5005 60  0001 C CNN
-F 3 "" H 5200 4900 60  0000 C CNN
-	1    5200 4900
+P 5100 4900
+F 0 "SW2" H 5100 5050 60  0000 C CNN
+F 1 "RST" H 5100 4800 60  0000 C CNN
+F 2 "engstad:tactile-switch-evpay-34x29mm" H 5100 5005 60  0001 C CNN
+F 3 "" H 5100 4900 60  0000 C CNN
+	1    5100 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1018,6 +996,7 @@ F 0 "J2" H 2700 6017 50  0000 C CNN
 F 1 "Micro_SD_Card" H 2700 5926 50  0000 C CNN
 F 2 "engstad:Molex_PS_105162_001" H 3900 5600 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/1051620001_sd.pdf" H 2750 5300 50  0001 C CNN
+F 4 "WM14405CT-ND" H 2750 5300 50  0001 C CNN "DigiKey#"
 	1    2750 5300
 	1    0    0    -1  
 $EndComp
@@ -1092,24 +1071,12 @@ Wire Wire Line
 	1000 5300 1000 5250
 Text Label 2750 1750 0    60   ~ 0
 OTG_FS_D-
-Text Label 10550 4700 0    50   ~ 0
+Text Label 10550 5200 0    50   ~ 0
 SDMMC_DET
 Text Label 1850 5800 2    60   ~ 0
 SDMMC_DET
 Text Label 10550 5100 0    50   ~ 0
-SWO
-Wire Wire Line
-	3600 3050 3400 3050
-Wire Wire Line
-	3600 3250 3400 3250
-Wire Wire Line
-	4100 3150 4450 3150
-Wire Wire Line
-	3400 3850 3950 3850
-Wire Wire Line
-	3650 4050 3950 4050
-Wire Wire Line
-	4450 3950 4600 3950
+SWO_JTDO
 Connection ~ 4600 3950
 Wire Wire Line
 	4600 3950 4600 4000
@@ -1118,9 +1085,9 @@ L Regulator_Linear:LP5907MFX-3.3 U1
 U 1 1 5F6ED042
 P 4500 1050
 F 0 "U1" H 4500 1417 50  0000 C CNN
-F 1 "LP5907MFX-3.3" H 4500 1326 50  0000 C CNN
+F 1 "TLV75733PDBVR‎" H 4500 1326 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4500 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 4500 1550 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv757p.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1601868242728" H 4500 1550 50  0001 C CNN
 	1    4500 1050
 	1    0    0    -1  
 $EndComp
@@ -1285,6 +1252,7 @@ F 0 "U3" H 5600 5150 60  0000 C CNN
 F 1 "APX823" H 6000 4650 60  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5800 4900 60  0001 C CNN
 F 3 "http://www.diodes.com/_files/datasheets/APX823_824_825A.pdf" V 6600 4900 60  0001 C CNN
+F 4 "APX823-31W5GDICT-ND" H 5800 4900 50  0001 C CNN "DigKey#"
 	1    5800 4900
 	1    0    0    -1  
 $EndComp
@@ -1312,8 +1280,6 @@ Text Label 10550 5500 0    50   ~ 0
 COMP_IN-
 Text Label 10550 5000 0    50   ~ 0
 RTC_OUT
-Text Label 10550 6300 0    50   ~ 0
-RTC_REFIN
 Text Label 10550 4100 0    50   ~ 0
 USART1_TX
 Text Label 10550 4200 0    50   ~ 0
@@ -1324,14 +1290,14 @@ U 1 1 5F7A839A
 P 8300 1000
 F 0 "J5" H 8350 1417 50  0000 C CNN
 F 1 "SPI/USART" H 8350 1326 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 8300 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8300 1000 50  0001 C CNN
 F 3 "~" H 8300 1000 50  0001 C CNN
 	1    8300 1000
 	1    0    0    -1  
 $EndComp
-Text Label 8600 1200 0    50   ~ 0
-USART1_TX
 Text Label 8100 1200 2    50   ~ 0
+USART1_TX
+Text Label 8600 1200 0    50   ~ 0
 USART1_RX
 Text Label 8100 900  2    50   ~ 0
 SPI2_SCK
@@ -1369,8 +1335,6 @@ Text Label 6400 900  2    50   ~ 0
 RTC_OUT
 Text Label 6400 1000 2    50   ~ 0
 RTC_TS
-Text Label 6400 1100 2    50   ~ 0
-RTC_REFIN
 $Comp
 L power:GND #PWR036
 U 1 1 5F7CED22
@@ -1493,6 +1457,8 @@ F 0 "SW3" H 5650 3750 60  0000 C CNN
 F 1 "USR" H 5650 3500 60  0000 C CNN
 F 2 "engstad:tactile-switch-evpay-34x29mm" H 5650 3705 60  0001 C CNN
 F 3 "" H 5650 3600 60  0000 C CNN
+F 4 "‎P17064CT-ND‎" H 5650 3600 50  0001 C CNN "DigiKey#"
+F 5 "‎EVP-AYF1BA‎" H 5650 3600 50  0001 C CNN "Manuf#"
 	1    5650 3600
 	0    -1   -1   0   
 $EndComp
@@ -1587,7 +1553,7 @@ OPAMP_IN-
 Text Label 10300 2050 2    50   ~ 0
 OPAMP_OUT
 Wire Wire Line
-	5050 4900 5050 5000
+	4950 4900 4950 5000
 Text Label 10300 2250 2    50   ~ 0
 COMP_IN+
 Text Label 10300 2150 2    50   ~ 0
@@ -1871,11 +1837,11 @@ Connection ~ 2000 3050
 Wire Wire Line
 	2000 3050 2350 3050
 Text Label 6400 1200 2    50   ~ 0
-SWCLK
+SWCLK_JTCK
 Text Label 8100 1100 2    50   ~ 0
-SWDIO
+SWDIO_JTMS
 Text Label 8600 1100 0    50   ~ 0
-SWO
+SWO_JTDO
 Wire Wire Line
 	6400 800  6300 800 
 Wire Wire Line
@@ -1918,14 +1884,10 @@ Text Label 10550 6100 0    50   ~ 0
 PB13
 Text Label 2750 6900 2    50   ~ 0
 PB13
-NoConn ~ 10650 1100
-NoConn ~ 10650 1200
 Text Label 2750 7100 2    50   ~ 0
 SEL_USART3
-Text Label 10550 5200 0    50   ~ 0
-SEL_USART3
 Text Label 10550 5600 0    50   ~ 0
-USR
+USR_BTN
 $Comp
 L power:GND #PWR0112
 U 1 1 5FFDD634
@@ -1968,9 +1930,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 2400 6850 2400
 Text Label 5650 3400 2    50   ~ 0
-BTN
+USR_BTN
 Text Notes 7000 7100 0    40   ~ 0
-Changes from v0.1:\n- Pin 29 connected to SPI2_SCK changed to QSPI_SCK (and hooked up).\n- Pin 34 connected to USART3_CTS changed to PB13.\n- Removed JTAG support (pin 50 (PA15) and 56 (PB4)), now only support SWD.\n- SDMMC_DET (pin 38 (PC7)) moved to pin 50 (PA15).\n- LED_RED (pin 61 (PB8)) moved to pin 38 (PC7).\n- Removed VBUS and VCC test-points.\n- Added 74LVC1G157 connecting SEL_USART3 (pin 56 (PB4)) and PB13 (pin 34) <-> USART3_CTS and SPI2_SCK.
+Changes from v0.1:\n- Pin 29 connected to SPI2_SCK changed to QSPI_SCK (and hooked up).\n- Pin 34 connected to USART3_CTS changed to PB13.\n- Removed NJTRST pin PB4.\n- SDMMC_DET (pin 38 (PC7)) moved to pin 56 (PB4).\n- LED_RED (pin 61 (PB8)) moved to pin 38 (PC7).\n- Removed VBUS and VCC test-points.\n- Added 74LVC1G157 connecting SEL_USART3 (pin 36 (PB15)) and PB13 (pin 34) <-> USART3_CTS and SPI2_SCK.
 Text Label 4800 3150 0    50   ~ 0
 BOOT0
 Wire Wire Line
@@ -2034,10 +1996,10 @@ Wire Wire Line
 Wire Notes Line
 	5200 3550 500  3550
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0116
 U 1 1 5FA77FB1
 P 4550 4950
-F 0 "#PWR?" H 4550 4800 50  0001 C CNN
+F 0 "#PWR0116" H 4550 4800 50  0001 C CNN
 F 1 "VDD" H 4550 5100 50  0000 C CNN
 F 2 "" H 4550 4950 60  0000 C CNN
 F 3 "" H 4550 4950 60  0000 C CNN
@@ -2045,10 +2007,10 @@ F 3 "" H 4550 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0117
 U 1 1 5FAACB03
 P 6650 4800
-F 0 "#PWR?" H 6650 4650 50  0001 C CNN
+F 0 "#PWR0117" H 6650 4650 50  0001 C CNN
 F 1 "VDD" H 6650 4950 50  0000 C CNN
 F 2 "" H 6650 4800 60  0000 C CNN
 F 3 "" H 6650 4800 60  0000 C CNN
@@ -2059,4 +2021,62 @@ Wire Wire Line
 	6650 4800 6650 4850
 Wire Wire Line
 	9050 1000 9050 1200
+$Comp
+L @Engstad:JUMPER_x2 SW1
+U 1 1 5F811252
+P 3850 3150
+F 0 "SW1" H 3850 3400 60  0000 C CNN
+F 1 "JUMPER_x2" H 3850 2900 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3850 3150 60  0001 C CNN
+F 3 "" H 3850 3150 60  0000 C CNN
+	1    3850 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3150 4450 3150
+Wire Wire Line
+	3400 3050 3700 3050
+Wire Wire Line
+	3400 3250 3700 3250
+$Comp
+L @Engstad:JUMPER_x2 SW1
+U 2 1 5F827D4F
+P 4200 3950
+F 0 "SW1" H 4200 4200 60  0000 C CNN
+F 1 "JUMPER_x2" H 4200 3750 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 4200 3950 60  0001 C CNN
+F 3 "" H 4200 3950 60  0000 C CNN
+	2    4200 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3850 4050 3850
+Wire Wire Line
+	3650 4050 4050 4050
+Wire Wire Line
+	4350 3950 4600 3950
+Wire Wire Line
+	5250 4900 5300 4900
+Wire Wire Line
+	5300 4900 5300 4650
+Wire Wire Line
+	5300 4650 5200 4650
+Connection ~ 5300 4900
+Wire Wire Line
+	5300 4900 5350 4900
+Text Label 5200 4650 2    50   ~ 0
+RSTIN#
+Text Label 10650 1200 0    50   ~ 0
+RSTIN#
+Text Notes 5850 1350 0    40   ~ 0
+Pin 7 was connected to PB15.
+NoConn ~ 6400 1100
+Text Label 10550 4700 0    50   ~ 0
+JTDI
+Text Label 10650 1100 0    50   ~ 0
+JTDI
+Text Label 10550 6300 0    50   ~ 0
+SEL_USART3
+Text Notes 7800 1400 0    40   ~ 0
+Flipped direction of all these pins \n(except USART), double check!
 $EndSCHEMATC

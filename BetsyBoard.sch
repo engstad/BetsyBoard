@@ -226,21 +226,21 @@ Text Label 9100 4500 0    60   ~ 0
 JTCK/SWCLK
 Text Label 9100 4600 0    60   ~ 0
 JTDI
-Text Label 9100 4900 0    60   ~ 0
-D1
 Text Label 9100 5700 0    60   ~ 0
-D2
+D1
 Text Label 9100 5800 0    60   ~ 0
+D2
+Text Label 9100 5900 0    60   ~ 0
 D3
-Text Label 9100 6000 0    60   ~ 0
-D5
 Text Label 9100 6100 0    60   ~ 0
-D6
+D5
 Text Label 9100 6200 0    60   ~ 0
-D7
+D6
 Text Label 6200 4500 2    60   ~ 0
-D8
+D7
 Text Label 6200 4600 2    60   ~ 0
+D8
+Text Label 9100 4000 0    60   ~ 0
 D9
 Text Label 9100 5200 0    60   ~ 0
 D12
@@ -312,7 +312,7 @@ Text Label 8550 2400 2    60   ~ 0
 D15
 Text Label 6200 3300 2    60   ~ 0
 RTC
-Text Label 9100 5900 0    60   ~ 0
+Text Label 9100 6000 0    60   ~ 0
 D4
 Text Label 10300 1350 0    60   ~ 0
 JTDI
@@ -337,12 +337,14 @@ F 0 "P3" H 10000 1550 50  0000 C CNN
 F 1 "CORTEX-JTAG" H 10000 950 50  0000 C CNN
 F 2 "engstad:conn-jtag-0.05" H 10000 50  60  0001 C CNN
 F 3 "" H 10000 50  60  0000 C CNN
+F 4 "200-FTSH10501LDV007K" H 10000 1250 50  0001 C CNN "Mouser#"
+F 5 "FTSH-105-01-F-DV-K-A" H 10000 1250 50  0001 C CNN "Manu#"
 	1    10000 1250
 	1    0    0    -1  
 $EndComp
-Text Label 9100 4000 0    60   ~ 0
-D10
 Text Label 9100 4100 0    60   ~ 0
+D10
+Text Label 9100 5100 0    60   ~ 0
 D11
 Text Label 9100 5300 0    60   ~ 0
 D13
@@ -409,8 +411,6 @@ F 3 "" H 10150 6050 60  0000 C CNN
 	1    10150 6050
 	1    0    0    -1  
 $EndComp
-Text Label 10150 4950 0    60   ~ 0
-D1
 $Comp
 L power:GND #PWR05
 U 1 1 5616688A
@@ -827,8 +827,6 @@ Text Label 4300 4000 0    60   ~ 0
 VBAT_IN
 Text Label 5600 3100 2    60   ~ 0
 BOOT_SEL
-Text Label 10300 1450 0    60   ~ 0
-~JTRST
 $Comp
 L @Engstad:SW_PUSH_NO SW2
 U 1 1 567471F1
@@ -1222,7 +1220,7 @@ U 1 1 5FA38BF4
 P 1200 1150
 F 0 "J1" H 1257 1617 50  0000 C CNN
 F 1 "USB_B_Micro" H 1257 1526 50  0000 C CNN
-F 2 "engstad:usb-micro-b-amphenol-fci-10118194" H 1350 1100 50  0001 C CNN
+F 2 "engstad:usb-micro-b-amphenol-fci-10118194-oval" H 1350 1100 50  0001 C CNN
 F 3 "~" H 1350 1100 50  0001 C CNN
 	1    1200 1150
 	1    0    0    -1  
@@ -1317,8 +1315,6 @@ Text Label 2750 1650 0    50   ~ 0
 D-
 Text Label 2000 950  0    50   ~ 0
 VBUS
-Text Label 9100 5100 0    60   ~ 0
-~JTRST
 Wire Wire Line
 	9800 3500 9900 3500
 Wire Wire Line
@@ -1441,10 +1437,10 @@ F 3 "" H 5850 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5F817E0A
 P 5200 2450
-F 0 "#PWR?" H 5200 2200 50  0001 C CNN
+F 0 "#PWR0106" H 5200 2200 50  0001 C CNN
 F 1 "GND" H 5200 2300 50  0000 C CNN
 F 2 "" H 5200 2450 60  0000 C CNN
 F 3 "" H 5200 2450 60  0000 C CNN
@@ -1454,14 +1450,28 @@ $EndComp
 Wire Wire Line
 	2450 650  2750 650 
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0101
 U 1 1 5F72B5EE
 P 3650 800
-F 0 "#FLG?" H 3650 875 50  0001 C CNN
+F 0 "#FLG0101" H 3650 875 50  0001 C CNN
 F 1 "PWR_FLAG" H 3650 973 50  0000 C CNN
 F 2 "" H 3650 800 50  0001 C CNN
 F 3 "~" H 3650 800 50  0001 C CNN
 	1    3650 800 
 	1    0    0    -1  
 $EndComp
+Text Label 10300 1450 0    50   ~ 0
+RESET#
+Text Label 9700 3200 2    50   ~ 0
+RESET#
+Wire Wire Line
+	9700 3200 9800 3200
+Wire Wire Line
+	9800 3200 9800 3500
+Connection ~ 9800 3500
+NoConn ~ 5100 4800
+Text Label 9100 4900 0    60   ~ 0
+LED
+Text Label 10150 4950 0    60   ~ 0
+LED
 $EndSCHEMATC
