@@ -1311,19 +1311,19 @@ F 3 "" H 7850 700 60  0000 C CNN
 	1    7850 700 
 	1    0    0    -1  
 $EndComp
-Text Label 6400 900  2    50   ~ 0
+Text Label 6900 1100 0    50   ~ 0
 RTC_OUT
-Text Label 6400 1000 2    50   ~ 0
+Text Label 6900 1200 0    50   ~ 0
 RTC_TS
 $Comp
 L power:GND #PWR036
 U 1 1 5F7CED22
-P 7000 1250
-F 0 "#PWR036" H 7000 1000 50  0001 C CNN
-F 1 "GND" H 7000 1100 50  0000 C CNN
-F 2 "" H 7000 1250 60  0000 C CNN
-F 3 "" H 7000 1250 60  0000 C CNN
-	1    7000 1250
+P 6350 1250
+F 0 "#PWR036" H 6350 1000 50  0001 C CNN
+F 1 "GND" H 6350 1100 50  0000 C CNN
+F 2 "" H 6350 1250 60  0000 C CNN
+F 3 "" H 6350 1250 60  0000 C CNN
+	1    6350 1250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1565,9 +1565,9 @@ Text Label 10600 2450 2    50   ~ 0
 DAC_OUT1
 Text Label 10600 2550 2    50   ~ 0
 DAC_OUT2
-Text Label 6900 1000 0    50   ~ 0
+Text Label 6900 900  0    50   ~ 0
 OCLK_LS
-Text Label 6900 1100 0    50   ~ 0
+Text Label 6900 1000 0    50   ~ 0
 OCLK_M
 $Comp
 L Mechanical:MountingHole_Pad H1
@@ -1658,12 +1658,12 @@ F 3 "" H 6700 5950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
+L Connector_Generic:Conn_02x04_Odd_Even J3
 U 1 1 5FA992E3
 P 6600 1000
 F 0 "J3" H 6650 1417 50  0000 C CNN
 F 1 "CLOCKS" H 6650 1326 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6600 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6600 1000 50  0001 C CNN
 F 3 "~" H 6600 1000 50  0001 C CNN
 	1    6600 1000
 	1    0    0    -1  
@@ -1671,12 +1671,12 @@ $EndComp
 $Comp
 L power:VDD #PWR0113
 U 1 1 5FAB765C
-P 6300 750
-F 0 "#PWR0113" H 6300 600 50  0001 C CNN
-F 1 "VDD" H 6300 900 50  0000 C CNN
-F 2 "" H 6300 750 60  0000 C CNN
-F 3 "" H 6300 750 60  0000 C CNN
-	1    6300 750 
+P 6300 900
+F 0 "#PWR0113" H 6300 750 50  0001 C CNN
+F 1 "VDD" H 6300 1050 50  0000 C CNN
+F 2 "" H 6300 900 60  0000 C CNN
+F 3 "" H 6300 900 60  0000 C CNN
+	1    6300 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1775,23 +1775,11 @@ Wire Wire Line
 Connection ~ 2000 3050
 Wire Wire Line
 	2000 3050 2350 3050
-Text Label 6400 1200 2    50   ~ 0
-SWCLK_JTCK
-Text Label 8100 1100 2    50   ~ 0
-SWDIO_JTMS
-Text Label 8600 1100 0    50   ~ 0
-SWO_JTDO
 Wire Wire Line
-	6400 800  6300 800 
-Wire Wire Line
-	6300 800  6300 750 
-Wire Wire Line
-	6900 1200 7000 1200
-Wire Wire Line
-	7000 1200 7000 1250
-Text Label 6900 800  0    50   ~ 0
+	6400 900  6300 900 
+Text Label 6400 1000 2    50   ~ 0
 EXTSCL
-Text Label 6900 900  0    50   ~ 0
+Text Label 6400 1100 2    50   ~ 0
 EXTSDA
 Text Label 3150 6800 0    50   ~ 0
 USART3_CTS
@@ -2007,9 +1995,8 @@ Text Label 5200 4650 2    50   ~ 0
 RSTIN#
 Text Label 10650 1200 0    50   ~ 0
 RSTIN#
-Text Notes 5850 1350 0    40   ~ 0
+Text Notes 6500 1500 0    40   ~ 0
 Pin 7 was connected to PB15.
-NoConn ~ 6400 1100
 Text Label 10550 4700 0    50   ~ 0
 JTDI
 Text Label 10650 1100 0    50   ~ 0
@@ -2226,4 +2213,10 @@ F 3 "" H 750 7600 60  0000 C CNN
 	1    750  7600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8100 1100
+NoConn ~ 8600 1100
+Wire Wire Line
+	6400 1200 6350 1200
+Wire Wire Line
+	6350 1200 6350 1250
 $EndSCHEMATC
