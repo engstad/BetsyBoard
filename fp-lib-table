@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name engstad)(type KiCad)(uri "$(KIPRJMOD)/lib/engstad/engstad.pretty")(options "")(descr ""))
+  (lib (name engstad)(type KiCad)(uri ${ENGSTADLIB}/engstad.pretty)(options "")(descr ""))
   (lib (name w_battery_holders)(type KiCad)(uri ${KIWALTERMOD}/w_battery_holders.pretty)(options "")(descr Walters))
   (lib (name w_capacitors)(type KiCad)(uri ${KIWALTERMOD}/w_capacitors.pretty)(options "")(descr Walters))
   (lib (name w_conn_9159)(type KiCad)(uri ${KIWALTERMOD}/w_conn_9159.pretty)(options "")(descr Walters))
