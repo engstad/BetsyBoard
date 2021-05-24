@@ -767,28 +767,28 @@ Wire Wire Line
 $Comp
 L power:GND #PWR054
 U 1 1 5F810F52
-P 3450 6000
-F 0 "#PWR054" H 3450 5750 50  0001 C CNN
-F 1 "GND" H 3450 5850 50  0000 C CNN
-F 2 "" H 3450 6000 60  0000 C CNN
-F 3 "" H 3450 6000 60  0000 C CNN
-	1    3450 6000
+P 3400 5950
+F 0 "#PWR054" H 3400 5700 50  0001 C CNN
+F 1 "GND" H 3400 5800 50  0000 C CNN
+F 2 "" H 3400 5950 60  0000 C CNN
+F 3 "" H 3400 5950 60  0000 C CNN
+	1    3400 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 5950 3450 5950
+	3300 5900 3400 5900
 Wire Wire Line
-	3450 5950 3450 6000
+	3400 5900 3400 5950
 $Comp
-L Connector:Micro_SD_Card_Det1 J8
+L @Engstad:SDMMC_Card_W_Det J8
 U 1 1 5F82D29C
-P 2550 5350
-F 0 "J8" H 2500 6067 50  0000 C CNN
-F 1 "Micro_SD_Card" H 2500 5976 50  0000 C CNN
-F 2 "engstad:Molex_PS_105162_001" H 3700 5650 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/1051620001_sd.pdf" H 2550 5350 50  0001 C CNN
-F 4 "WM14405CT-ND" H 2550 5350 50  0001 C CNN "DigiKey#"
-	1    2550 5350
+P 2550 5450
+F 0 "J8" H 2500 6167 50  0000 C CNN
+F 1 "Micro_SD_Card" H 2500 6076 50  0000 C CNN
+F 2 "engstad:Molex_PS_105162_001" H 3700 5750 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/1051620001_sd.pdf" H 2550 5450 50  0001 C CNN
+F 4 "WM14405CT-ND" H 2550 5450 50  0001 C CNN "DigiKey#"
+	1    2550 5450
 	1    0    0    -1  
 $EndComp
 NoConn ~ 650  2350
@@ -908,17 +908,6 @@ F 3 "~" H 4250 7350 50  0001 C CNN
 	1    4250 7350
 	-1   0    0    1   
 $EndComp
-$Comp
-L Memory_Flash:IS25WP256D-xM U6
-U 1 1 5F7865F4
-P 1400 7000
-F 0 "U6" H 1150 7450 50  0000 C CNN
-F 1 "IS25WP256D-xM" H 1750 6550 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 1450 7600 50  0001 C CNN
-F 3 "http://www.issi.com/WW/pdf/IS25LP(WP)256D.pdf" H 1450 6500 50  0001 C CNN
-	1    1400 7000
-	1    0    0    -1  
-$EndComp
 Connection ~ 800  5350
 $Comp
 L power:GND #PWR070
@@ -962,7 +951,6 @@ Text Label 900  7200 2    50   ~ 0
 QSPI_IO3
 Text Label 900  6900 2    50   ~ 0
 QSPI_SCK
-NoConn ~ 1900 7100
 Text Label 900  7000 2    50   ~ 0
 QSPI_CS#
 Text Label 7650 4000 2    50   ~ 0
@@ -1847,7 +1835,7 @@ L Device:R_US R3
 U 1 1 5FAF5200
 P 5300 3800
 F 0 "R3" V 5200 3850 50  0000 R CNN
-F 1 "100K" V 5400 3850 50  0000 R CNN
+F 1 "100K" V 5400 3900 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5230 3708 30  0001 R CNN
 F 3 "" H 5300 3800 30  0000 C CNN
 	1    5300 3800
@@ -2017,7 +2005,6 @@ F 3 "" H 10350 -200 60  0000 C CNN
 $EndComp
 NoConn ~ 11900 2150
 NoConn ~ 8600 250 
-NoConn ~ 6200 3400
 NoConn ~ 11450 1050
 Text Label 10550 5800 0    50   ~ 0
 QSPI_SCK
@@ -2267,4 +2254,17 @@ Text Label 10650 1200 0    50   ~ 0
 ~JTRST
 Text Notes 10450 1400 0    40   ~ 0
 Note: ~JTRST~ only broken \nout as a test-point.\n
+Text Notes 550  4400 0    50   ~ 0
+CX = 2*(CL - Cstray) = 2 * (12.5 - [2-5]) = [15 - 21] pF 
+$Comp
+L @Engstad:IS25LP06D-xB U6
+U 1 1 60ABB36B
+P 1400 7000
+F 0 "U6" H 1050 7450 50  0000 C CNN
+F 1 "IS25LP06D-xB" H 1750 6550 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 1450 7600 50  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/IS25LP(WP)256D.pdf" H 1450 6500 50  0001 C CNN
+	1    1400 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
