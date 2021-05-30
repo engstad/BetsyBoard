@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L @Engstad:STM32L486Rx-LQFP64 U4
+L BetsyBoard-rescue:STM32L486Rx-LQFP64-@Engstad U4
 U 1 1 55F9D79E
 P 7650 4650
 F 0 "U4" H 6650 6450 60  0000 C CNN
@@ -310,8 +310,8 @@ Text Label 8550 2300 2    60   ~ 0
 D14
 Text Label 8550 2400 2    60   ~ 0
 D15
-Text Label 6200 3300 2    60   ~ 0
-RTC
+Text Label 9100 3900 0    60   ~ 0
+MCO
 Text Label 9100 6000 0    60   ~ 0
 D4
 Text Label 10300 1350 0    60   ~ 0
@@ -439,23 +439,12 @@ $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5629BF5F
-P 4450 3250
-F 0 "#PWR06" H 4450 3000 50  0001 C CNN
-F 1 "GND" H 4450 3100 50  0000 C CNN
-F 2 "" H 4450 3250 60  0000 C CNN
-F 3 "" H 4450 3250 60  0000 C CNN
-	1    4450 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR07
-U 1 1 5629CAD9
-P 4450 2950
-F 0 "#PWR07" H 4450 2800 50  0001 C CNN
-F 1 "VDD" H 4450 3100 50  0000 C CNN
-F 2 "" H 4450 2950 60  0000 C CNN
-F 3 "" H 4450 2950 60  0000 C CNN
-	1    4450 2950
+P 5050 3200
+F 0 "#PWR06" H 5050 2950 50  0001 C CNN
+F 1 "GND" H 5050 3050 50  0000 C CNN
+F 2 "" H 5050 3200 60  0000 C CNN
+F 3 "" H 5050 3200 60  0000 C CNN
+	1    5050 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -527,65 +516,65 @@ $EndComp
 $Comp
 L Device:Crystal Y1
 U 1 1 562BB610
-P 2550 3400
-F 0 "Y1" H 2550 3550 50  0000 C CNN
-F 1 "Crystal" H 2550 3250 50  0000 C CNN
-F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2550 3650 60  0000 C CNN
-F 3 "" H 2550 3400 60  0000 C CNN
-	1    2550 3400
+P 2550 3800
+F 0 "Y1" H 2550 3950 50  0000 C CNN
+F 1 "Crystal" H 2550 3650 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2550 4050 60  0000 C CNN
+F 3 "" H 2550 3800 60  0000 C CNN
+	1    2550 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 562BB6B5
-P 2250 3600
-F 0 "C8" H 2260 3670 50  0000 L CNN
-F 1 "10pF" H 2260 3520 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 3600 60  0001 C CNN
-F 3 "" H 2250 3600 60  0000 C CNN
-	1    2250 3600
+P 2250 4000
+F 0 "C8" H 2260 4070 50  0000 L CNN
+F 1 "10pF" H 2260 3920 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 4000 60  0001 C CNN
+F 3 "" H 2250 4000 60  0000 C CNN
+	1    2250 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C9
 U 1 1 562BB746
-P 2800 3600
-F 0 "C9" H 2810 3670 50  0000 L CNN
-F 1 "10pF" H 2810 3520 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 3600 60  0001 C CNN
-F 3 "" H 2800 3600 60  0000 C CNN
-	1    2800 3600
+P 2800 4000
+F 0 "C9" H 2810 4070 50  0000 L CNN
+F 1 "10pF" H 2810 3920 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 4000 60  0001 C CNN
+F 3 "" H 2800 4000 60  0000 C CNN
+	1    2800 4000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 562BB83F
-P 2250 3700
-F 0 "#PWR013" H 2250 3450 50  0001 C CNN
-F 1 "GND" H 2250 3550 50  0000 C CNN
-F 2 "" H 2250 3700 60  0000 C CNN
-F 3 "" H 2250 3700 60  0000 C CNN
-	1    2250 3700
+P 2250 4100
+F 0 "#PWR013" H 2250 3850 50  0001 C CNN
+F 1 "GND" H 2250 3950 50  0000 C CNN
+F 2 "" H 2250 4100 60  0000 C CNN
+F 3 "" H 2250 4100 60  0000 C CNN
+	1    2250 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 562BB8CB
-P 2800 3700
-F 0 "#PWR014" H 2800 3450 50  0001 C CNN
-F 1 "GND" H 2800 3550 50  0000 C CNN
-F 2 "" H 2800 3700 60  0000 C CNN
-F 3 "" H 2800 3700 60  0000 C CNN
-	1    2800 3700
+P 2800 4100
+F 0 "#PWR014" H 2800 3850 50  0001 C CNN
+F 1 "GND" H 2800 3950 50  0000 C CNN
+F 2 "" H 2800 4100 60  0000 C CNN
+F 3 "" H 2800 4100 60  0000 C CNN
+	1    2800 4100
 	1    0    0    -1  
 $EndComp
 Text Label 6200 3400 2    60   ~ 0
 RTC_OSC_IN
 Text Label 6200 3500 2    60   ~ 0
 RTC_OSC_OUT
-Text Label 2100 3400 2    60   ~ 0
+Text Label 2100 3800 2    60   ~ 0
 RTC_OSC_IN
-Text Label 3000 3400 0    60   ~ 0
+Text Label 3000 3800 0    60   ~ 0
 RTC_OSC_OUT
 $Comp
 L Connector_Generic:Conn_01x16 P4
@@ -677,28 +666,6 @@ F 3 "" H 5500 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 P6
-U 1 1 56691320
-P 4050 4000
-F 0 "P6" H 4050 4100 50  0000 C CNN
-F 1 "BATT" V 4150 3950 50  0000 C CNN
-F 2 "engstad:pin-socket-2" H 4050 4000 60  0001 C CNN
-F 3 "" H 4050 4000 60  0000 C CNN
-	1    4050 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5669151A
-P 4500 4150
-F 0 "#PWR018" H 4500 3900 50  0001 C CNN
-F 1 "GND" H 4500 4000 50  0000 C CNN
-F 2 "" H 4500 4150 60  0000 C CNN
-F 3 "" H 4500 4150 60  0000 C CNN
-	1    4500 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VDD #PWR019
 U 1 1 56721E3D
 P 1250 6750
@@ -721,17 +688,6 @@ F 3 "" H 1200 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR021
-U 1 1 56745056
-P 4000 3800
-F 0 "#PWR021" H 4000 3650 50  0001 C CNN
-F 1 "VDD" H 4000 3950 50  0000 C CNN
-F 2 "" H 4000 3800 60  0000 C CNN
-F 3 "" H 4000 3800 60  0000 C CNN
-	1    4000 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VDD #PWR022
 U 1 1 56745B0A
 P 9550 1000
@@ -746,9 +702,9 @@ Text Label 6200 3600 2    60   ~ 0
 OSC_IN
 Text Label 6200 3700 2    60   ~ 0
 OSC_OUT
-Text Label 2350 2800 2    60   ~ 0
+Text Label 1950 2800 2    60   ~ 0
 OSC_IN
-Text Label 2750 2800 0    60   ~ 0
+Text Label 3100 2800 0    60   ~ 0
 OSC_OUT
 $Comp
 L power:GND #PWR023
@@ -786,45 +742,20 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 P7
 U 1 1 56779E0F
-P 2550 4150
-F 0 "P7" H 2550 4050 50  0000 C CNN
-F 1 "RTC" H 2700 4150 50  0000 C CNN
-F 2 "engstad:pin-socket-1" H 2469 4010 50  0001 C CNN
-F 3 "" H 2550 4150 50  0000 C CNN
-	1    2550 4150
+P 2550 4550
+F 0 "P7" H 2550 4450 50  0000 C CNN
+F 1 "MCO" H 2700 4550 50  0000 C CNN
+F 2 "engstad:pin-socket-1" H 2469 4410 50  0001 C CNN
+F 3 "" H 2550 4550 50  0000 C CNN
+	1    2550 4550
 	-1   0    0    1   
 $EndComp
-Text Label 2750 4150 0    60   ~ 0
-RTC
+Text Label 2750 4550 0    60   ~ 0
+MCO
 Text Label 10550 4950 0    60   ~ 0
 VDD
-$Comp
-L @Engstad:spdp-2x SW1
-U 1 1 567A978A
-P 4900 3100
-F 0 "SW1" H 4900 3350 60  0000 C CNN
-F 1 "DIPSW" H 4900 2850 60  0000 C CNN
-F 2 "engstad:slide-switch-smd-cas-220-d20" H 4900 3100 60  0001 C CNN
-F 3 "" H 4900 3100 60  0000 C CNN
-	1    4900 3100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L @Engstad:spdp-2x SW1
-U 2 1 567A9897
-P 4900 3900
-F 0 "SW1" H 4900 3650 60  0000 C CNN
-F 1 "DIPSW" H 4900 4150 60  0000 C CNN
-F 2 "engstad:slide-switch-smd-cas-220-d20" H 4900 3900 60  0001 C CNN
-F 3 "" H 4900 3900 60  0000 C CNN
-	2    4900 3900
-	-1   0    0    1   
-$EndComp
-NoConn ~ 4900 7650
 Text Label 6200 3200 2    60   ~ 0
 VBAT
-Text Label 4300 4000 0    60   ~ 0
-VBAT_IN
 Text Label 5600 3100 2    60   ~ 0
 BOOT_SEL
 $Comp
@@ -873,17 +804,6 @@ F 3 "" H 1250 5900 60  0000 C CNN
 $EndComp
 Text Label 3450 950  0    60   ~ 0
 VIN
-$Comp
-L power:PWR_FLAG #FLG028
-U 1 1 58FDA87D
-P 5300 3550
-F 0 "#FLG028" H 5300 3645 50  0001 C CNN
-F 1 "PWR_FLAG" H 5300 3750 50  0000 C CNN
-F 2 "" H 5300 3550 50  0000 C CNN
-F 3 "" H 5300 3550 50  0000 C CNN
-	1    5300 3550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR031
 U 1 1 58FDC5DA
@@ -992,15 +912,15 @@ Wire Wire Line
 Wire Wire Line
 	10550 5950 10550 6050
 Wire Wire Line
-	2250 3500 2250 3400
+	2250 3900 2250 3800
 Wire Wire Line
-	2100 3400 2250 3400
+	2100 3800 2250 3800
 Wire Wire Line
-	2700 3400 2800 3400
+	2700 3800 2800 3800
 Wire Wire Line
-	2800 3400 2800 3500
-Connection ~ 2250 3400
-Connection ~ 2800 3400
+	2800 3800 2800 3900
+Connection ~ 2250 3800
+Connection ~ 2800 3800
 Wire Wire Line
 	10350 3000 10350 3050
 Wire Wire Line
@@ -1022,10 +942,6 @@ Connection ~ 9700 1450
 Connection ~ 9550 1450
 Wire Wire Line
 	5500 3200 6200 3200
-Wire Wire Line
-	4250 4100 4500 4100
-Wire Wire Line
-	4500 4100 4500 4150
 Wire Wire Line
 	5200 950  5200 1050
 Connection ~ 5500 950 
@@ -1050,11 +966,7 @@ Connection ~ 2750 950
 Wire Wire Line
 	5500 950  5500 850 
 Wire Wire Line
-	4450 3250 4450 3200
-Wire Wire Line
-	4450 2950 4450 3000
-Wire Wire Line
-	5500 3200 5500 3550
+	5050 3200 5050 3100
 Wire Wire Line
 	5900 3100 6200 3100
 Wire Wire Line
@@ -1069,9 +981,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 800  3650 950 
 Connection ~ 3650 950 
-Wire Wire Line
-	5300 3550 5500 3550
-Connection ~ 5500 3550
 $Comp
 L power:VDDA #PWR039
 U 1 1 58FDF596
@@ -1175,9 +1084,9 @@ Wire Wire Line
 Wire Wire Line
 	5200 2100 5850 2100
 Wire Wire Line
-	2250 3400 2400 3400
+	2250 3800 2400 3800
 Wire Wire Line
-	2800 3400 3000 3400
+	2800 3800 3000 3800
 Wire Wire Line
 	9700 1250 9700 1450
 Wire Wire Line
@@ -1215,7 +1124,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 6100 6100 6200
 $Comp
-L Connector:USB_B_Micro J1
+L BetsyBoard-rescue:USB_B_Micro-Connector J1
 U 1 1 5FA38BF4
 P 1200 1150
 F 0 "J1" H 1257 1617 50  0000 C CNN
@@ -1224,18 +1133,6 @@ F 2 "engstad:usb-micro-b-amphenol-fci-10118194-oval" H 1350 1100 50  0001 C CNN
 F 3 "~" H 1350 1100 50  0001 C CNN
 	1    1200 1150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 5FA452E4
-P 3050 950
-F 0 "FB1" V 2900 950 50  0000 C CNN
-F 1 "220Ω@100MHz" V 3150 950 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 2980 950 50  0001 C CNN
-F 3 "https://www.murata.com/en-us/products/en-us/products/productdata/8796738977822/ENFA0005.pdf" H 3050 950 50  0001 C CNN
-F 4 "BLM21PG221SN1D" V 3250 950 50  0000 C CNN "Manuf #"
-	1    3050 950 
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Ferrite_Bead_Small FB2
@@ -1271,7 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 6350 4800 6400
 $Comp
-L Connector:Micro_SD_Card_Det1 J2
+L BetsyBoard-rescue:Micro_SD_Card_Det1-Connector J2
 U 1 1 5F82D29C
 P 3900 5750
 F 0 "J2" H 3850 6467 50  0000 C CNN
@@ -1356,24 +1253,12 @@ Wire Wire Line
 	1250 5750 1250 5650
 Text Label 2750 1850 0    60   ~ 0
 OTG_FS_D-
-Text Label 9100 3900 0    60   ~ 0
+Text Label 6200 3300 2    60   ~ 0
 SDMMC_DET
 Text Label 3000 6250 2    60   ~ 0
 SDMMC_DET
 Text Label 9100 5000 0    60   ~ 0
 JTDO/SWO
-Wire Wire Line
-	4650 3000 4450 3000
-Wire Wire Line
-	4650 3200 4450 3200
-Wire Wire Line
-	5150 3100 5600 3100
-Wire Wire Line
-	5500 3550 5500 3900
-Wire Wire Line
-	4000 3800 4650 3800
-Wire Wire Line
-	4250 4000 4650 4000
 Wire Wire Line
 	5150 3900 5500 3900
 Connection ~ 5500 3900
@@ -1409,7 +1294,7 @@ U 1 1 5F7C24DA
 P 5750 2450
 F 0 "NT1" H 5750 2631 50  0000 C CNN
 F 1 "Net-Tie_2" H 5750 2540 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5750 2450 50  0001 C CNN
+F 2 "engstad:net-tie-0.4mm" H 5750 2450 50  0001 C CNN
 F 3 "~" H 5750 2450 50  0001 C CNN
 	1    5750 2450
 	1    0    0    -1  
@@ -1469,9 +1354,142 @@ Wire Wire Line
 Wire Wire Line
 	9800 3200 9800 3500
 Connection ~ 9800 3500
-NoConn ~ 5100 4800
 Text Label 9100 4900 0    60   ~ 0
 LED
 Text Label 10150 4950 0    60   ~ 0
 LED
+$Comp
+L Device:Fuse_Small F1
+U 1 1 60B43E33
+P 3050 950
+F 0 "F1" H 3050 1135 50  0000 C CNN
+F 1 "Fuse_Small" H 3050 1044 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 3050 950 50  0001 C CNN
+F 3 "~" H 3050 950 50  0001 C CNN
+	1    3050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 60B4E8B8
+P 2250 2950
+F 0 "C4" H 2260 3020 50  0000 L CNN
+F 1 "10pF" H 2260 2870 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2250 2950 60  0001 C CNN
+F 3 "" H 2250 2950 60  0000 C CNN
+	1    2250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 60B5C466
+P 2850 2950
+F 0 "C18" H 2860 3020 50  0000 L CNN
+F 1 "10pF" H 2860 2870 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 2950 60  0001 C CNN
+F 3 "" H 2850 2950 60  0000 C CNN
+	1    2850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 60B5D5D1
+P 2250 3050
+F 0 "#PWR0107" H 2250 2800 50  0001 C CNN
+F 1 "GND" H 2250 2900 50  0000 C CNN
+F 2 "" H 2250 3050 60  0000 C CNN
+F 3 "" H 2250 3050 60  0000 C CNN
+	1    2250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60B5E211
+P 2850 3050
+F 0 "#PWR0108" H 2850 2800 50  0001 C CNN
+F 1 "GND" H 2850 2900 50  0000 C CNN
+F 2 "" H 2850 3050 60  0000 C CNN
+F 3 "" H 2850 3050 60  0000 C CNN
+	1    2850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2800 2250 2800
+Wire Wire Line
+	2250 2800 2250 2850
+Connection ~ 2250 2800
+Wire Wire Line
+	2250 2800 2350 2800
+Wire Wire Line
+	2750 2800 2850 2800
+Wire Wire Line
+	2850 2800 2850 2850
+Connection ~ 2850 2800
+Wire Wire Line
+	2850 2800 3100 2800
+Wire Wire Line
+	5050 3100 5600 3100
+Wire Wire Line
+	5500 3200 5500 3900
+$Comp
+L power:VDD #PWR0109
+U 1 1 60B8A34B
+P 5150 3800
+F 0 "#PWR0109" H 5150 3650 50  0001 C CNN
+F 1 "VDD" H 5150 3950 50  0000 C CNN
+F 2 "" H 5150 3800 60  0000 C CNN
+F 3 "" H 5150 3800 60  0000 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3800 5150 3900
+$Comp
+L power:VSSA #PWR0110
+U 1 1 60B912B9
+P 850 3750
+F 0 "#PWR0110" H 850 3600 50  0001 C CNN
+F 1 "VSSA" H 850 3900 50  0000 C CNN
+F 2 "" H 850 3750 50  0001 C CNN
+F 3 "" H 850 3750 50  0001 C CNN
+	1    850  3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60B92599
+P 850 3750
+F 0 "#FLG0102" H 850 3845 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 3950 50  0000 C CNN
+F 2 "" H 850 3750 50  0000 C CNN
+F 3 "" H 850 3750 50  0000 C CNN
+	1    850  3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male P6
+U 1 1 60BE3955
+P 5950 1450
+F 0 "P6" H 5950 1350 50  0000 C CNN
+F 1 "VDD" H 5850 1450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5869 1310 50  0001 C CNN
+F 3 "" H 5950 1450 50  0000 C CNN
+	1    5950 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60BEBC63
+P 5700 1500
+F 0 "#PWR0111" H 5700 1250 50  0001 C CNN
+F 1 "GND" H 5700 1350 50  0000 C CNN
+F 2 "" H 5700 1500 60  0000 C CNN
+F 3 "" H 5700 1500 60  0000 C CNN
+	1    5700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1500 5700 1450
+Wire Wire Line
+	5700 1450 5750 1450
 $EndSCHEMATC
