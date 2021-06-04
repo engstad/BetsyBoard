@@ -8,3 +8,4 @@ _saved*
 gerbers/*.zip
 /fp-info-cache
 *.sch-bak
+*-rescue.*
