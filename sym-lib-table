@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name @Engstad)(type Legacy)(uri ${ENGSTADLIB}/engstad/engstad.kicad_sym)(options "")(descr ""))
-  (lib (name BetsyBoardBig-rescue)(type Legacy)(uri ${KIPRJMOD}/BetsyBoardBig-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "@Engstad")(type "KiCad")(uri "${KIPRJMOD}/../engstad-kicad-lib/engstad/engstad.kicad_sym")(options "")(descr ""))
+  (lib (name "BetsyBoard-rescue")(type "KiCad")(uri "${KIPRJMOD}/BetsyBoard-rescue.kicad_sym")(options "")(descr ""))
 )
